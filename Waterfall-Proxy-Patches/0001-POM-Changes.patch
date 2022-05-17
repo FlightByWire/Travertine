@@ -1,4 +1,4 @@
-From ac68088ce37b2d05044eb53dda44e80d86fc6f5b Mon Sep 17 00:00:00 2001
+From 509661a9a487942ff9384d544f7464647f768179 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
@@ -217,7 +217,7 @@ index 465ebbf2..e26dd259 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/log4j/pom.xml b/log4j/pom.xml
-index f4fc88c4..a830d521 100644
+index 34740637..a830d521 100644
 --- a/log4j/pom.xml
 +++ b/log4j/pom.xml
 @@ -4,18 +4,18 @@
@@ -225,9 +225,8 @@ index f4fc88c4..a830d521 100644
      <parent>
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
--        <version>1.17-R0.1-SNAPSHOT</version>
 +        <artifactId>travertine-parent</artifactId>
-+        <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.18-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
