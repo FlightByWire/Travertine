@@ -1,4 +1,4 @@
-From 4eb03769ee29ba5343cfcc9588f2eb62194639b6 Mon Sep 17 00:00:00 2001
+From 721936a4d8e9e58eac19e5a3a487dcc9787a35c2 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
@@ -217,7 +217,7 @@ index 465ebbf2..e26dd259 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/log4j/pom.xml b/log4j/pom.xml
-index d3512fca..453662f1 100644
+index 39e2fa42..dec0e528 100644
 --- a/log4j/pom.xml
 +++ b/log4j/pom.xml
 @@ -4,18 +4,18 @@
@@ -242,7 +242,7 @@ index d3512fca..453662f1 100644
 +    <description>Simplistic and performant Log4j2 based logger and console API designed for use with Travertine and Minecraft related applications.</description>
  
      <properties>
-         <log4j2.version>2.16.0</log4j2.version>
+         <log4j2.version>2.17.0</log4j2.version>
 @@ -50,5 +50,24 @@
              <version>3.4.4</version>
              <scope>runtime</scope>
