@@ -1,11 +1,11 @@
-From 83db64449968cf0f140b78542754489b4b6dda54 Mon Sep 17 00:00:00 2001
+From 88ab909e3c6ff60b14d083debc1a70c13bad1748 Mon Sep 17 00:00:00 2001
 From: Techcable <Techcable@techcable.net>
 Date: Mon, 6 Jun 2016 13:47:46 -0600
 Subject: [PATCH] Rename references from Waterfall to Travertine
 
 
 diff --git a/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java b/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java
-index a4516ed9..1f63a2c2 100644
+index a4516ed96..1f63a2c27 100644
 --- a/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java
 +++ b/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java
 @@ -7,7 +7,7 @@ public class Bootstrap
@@ -18,7 +18,7 @@ index a4516ed9..1f63a2c2 100644
              return;
          }
 diff --git a/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java b/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java
-index d703d6d2..d8dcdc1e 100644
+index d703d6d24..d8dcdc1e3 100644
 --- a/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java
 +++ b/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java
 @@ -12,7 +12,7 @@ public class LogDispatcher extends Thread
@@ -31,7 +31,7 @@ index d703d6d2..d8dcdc1e 100644
      }
  
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-index 07d74c67..db9cdf5f 100644
+index 9ef2b77a5..d08f19f34 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 @@ -188,7 +188,7 @@ public class BungeeCord extends ProxyServer
@@ -43,7 +43,7 @@ index 07d74c67..db9cdf5f 100644
  
          try
          {
-@@ -539,7 +539,7 @@ public class BungeeCord extends ProxyServer
+@@ -536,7 +536,7 @@ public class BungeeCord extends ProxyServer
      @Override
      public String getName()
      {
@@ -53,7 +53,7 @@ index 07d74c67..db9cdf5f 100644
  
      @Override
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java b/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
-index 0db3d76a..8a410ba2 100644
+index 0db3d76ae..8a410ba29 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
 @@ -63,7 +63,7 @@ public class BungeeCordLauncher
@@ -66,7 +66,7 @@ index 0db3d76a..8a410ba2 100644
  
          if ( !options.has( "noconsole" ) )
 diff --git a/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java b/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
-index b26035cf..4e2c6129 100644
+index b26035cf9..4e2c6129c 100644
 --- a/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
 +++ b/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
 @@ -16,6 +16,6 @@ public class CommandBungee extends Command
@@ -78,7 +78,7 @@ index b26035cf..4e2c6129 100644
      }
  }
 diff --git a/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java b/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java
-index 720d0c3b..dca7601b 100644
+index 720d0c3b5..dca7601b0 100644
 --- a/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java
 +++ b/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java
 @@ -23,7 +23,7 @@ public class CommandReload extends Command
@@ -92,7 +92,7 @@ index 720d0c3b..dca7601b 100644
      }
  }
 diff --git a/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java b/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
-index 0644b8cd..e9ecf5d1 100644
+index 0644b8cd3..e9ecf5d16 100644
 --- a/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
 +++ b/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
 @@ -227,7 +227,7 @@ public class YamlConfig implements ConfigurationAdapter
@@ -105,5 +105,5 @@ index 0644b8cd..e9ecf5d1 100644
              SocketAddress address = Util.getAddr( addr );
              ServerInfo info = ProxyServer.getInstance().constructServerInfo( name, address, motd, restricted );
 -- 
-2.30.0
+2.36.1
 
