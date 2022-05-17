@@ -1,4 +1,4 @@
-From fdfce72f144975d5050ba1aac5bd66e74ae8488c Mon Sep 17 00:00:00 2001
+From 01c3090da7ba93a10cc9aa6e85c61667fe30b754 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 10:31:04 -0500
 Subject: [PATCH] 1.7.x Protocol Patch
@@ -1430,10 +1430,10 @@ index 9e74d158..c7d77286 100644
                  throw CancelSendSignal.INSTANCE;
              }
 diff --git a/proxy/src/main/java/net/md_5/bungee/UserConnection.java b/proxy/src/main/java/net/md_5/bungee/UserConnection.java
-index 8e85f0e6..843aff88 100644
+index 4a858f31..9ae03413 100644
 --- a/proxy/src/main/java/net/md_5/bungee/UserConnection.java
 +++ b/proxy/src/main/java/net/md_5/bungee/UserConnection.java
-@@ -194,6 +194,7 @@ public final class UserConnection implements ProxiedPlayer
+@@ -193,6 +193,7 @@ public final class UserConnection implements ProxiedPlayer
      public void setDisplayName(String name)
      {
          Preconditions.checkNotNull( name, "displayName" );
@@ -1441,7 +1441,7 @@ index 8e85f0e6..843aff88 100644
          displayName = name;
      }
  
-@@ -513,7 +514,9 @@ public final class UserConnection implements ProxiedPlayer
+@@ -506,7 +507,9 @@ public final class UserConnection implements ProxiedPlayer
          // transform score components
          message = ChatComponentTransformer.getInstance().transform( this, true, message );
  
@@ -1452,7 +1452,7 @@ index 8e85f0e6..843aff88 100644
          {
              // Versions older than 1.11 cannot send the Action bar with the new JSON formattings
              // Fix by converting to a legacy message, see https://bugs.mojang.com/browse/MC-119145
-@@ -709,6 +712,7 @@ public final class UserConnection implements ProxiedPlayer
+@@ -702,6 +705,7 @@ public final class UserConnection implements ProxiedPlayer
      @Override
      public void setTabHeader(BaseComponent header, BaseComponent footer)
      {
@@ -1460,7 +1460,7 @@ index 8e85f0e6..843aff88 100644
          header = ChatComponentTransformer.getInstance().transform( this, true, header )[0];
          footer = ChatComponentTransformer.getInstance().transform( this, true, footer )[0];
  
-@@ -721,6 +725,7 @@ public final class UserConnection implements ProxiedPlayer
+@@ -714,6 +718,7 @@ public final class UserConnection implements ProxiedPlayer
      @Override
      public void setTabHeader(BaseComponent[] header, BaseComponent[] footer)
      {
@@ -1468,7 +1468,7 @@ index 8e85f0e6..843aff88 100644
          header = ChatComponentTransformer.getInstance().transform( this, true, header );
          footer = ChatComponentTransformer.getInstance().transform( this, true, footer );
  
-@@ -750,6 +755,7 @@ public final class UserConnection implements ProxiedPlayer
+@@ -743,6 +748,7 @@ public final class UserConnection implements ProxiedPlayer
  
      public void setCompressionThreshold(int compressionThreshold)
      {
@@ -1477,10 +1477,10 @@ index 8e85f0e6..843aff88 100644
          {
              this.compressionThreshold = compressionThreshold;
 diff --git a/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java b/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
-index d3650ff8..a9dfa544 100644
+index 97c4b210..cc98d2f3 100644
 --- a/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
 +++ b/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
-@@ -20,6 +20,7 @@ import io.netty.buffer.Unpooled;
+@@ -18,6 +18,7 @@ import io.netty.buffer.Unpooled;
  import io.netty.channel.unix.DomainSocketAddress;
  import java.io.DataInput;
  import java.net.InetSocketAddress;
@@ -1488,7 +1488,7 @@ index d3650ff8..a9dfa544 100644
  import java.util.ArrayList;
  import java.util.HashMap; // Waterfall
  import java.util.List;
-@@ -179,7 +180,7 @@ public class DownstreamBridge extends PacketHandler
+@@ -184,7 +185,7 @@ public class DownstreamBridge extends PacketHandler
          switch ( objective.getAction() )
          {
              case 0:
@@ -1497,7 +1497,7 @@ index d3650ff8..a9dfa544 100644
                  break;
              case 1:
                  serverScoreboard.removeObjective( objective.getName() );
-@@ -189,7 +190,7 @@ public class DownstreamBridge extends PacketHandler
+@@ -194,7 +195,7 @@ public class DownstreamBridge extends PacketHandler
                  if ( oldObjective != null )
                  {
                      oldObjective.setValue( objective.getValue() );
@@ -1506,7 +1506,7 @@ index d3650ff8..a9dfa544 100644
                  }
                  break;
              default:
-@@ -287,16 +288,28 @@ public class DownstreamBridge extends PacketHandler
+@@ -292,16 +293,28 @@ public class DownstreamBridge extends PacketHandler
  
          if ( pluginMessage.getTag().equals( con.getPendingConnection().getVersion() >= ProtocolConstants.MINECRAFT_1_13 ? "minecraft:brand" : "MC|Brand" ) )
          {
