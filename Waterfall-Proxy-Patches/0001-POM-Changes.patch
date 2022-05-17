@@ -1,11 +1,11 @@
-From 0de1aaebbeae5dbb7577407bf6a1eace3d167aee Mon Sep 17 00:00:00 2001
+From 1efcbbe99146c678c3bc3b8063c555bb223f6aca Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
 
 
 diff --git a/api/pom.xml b/api/pom.xml
-index 379b6023..a7f49d87 100644
+index 379b60230..a7f49d87d 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -5,41 +5,41 @@
@@ -58,7 +58,7 @@ index 379b6023..a7f49d87 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
-index 00ce099c..aad8b15b 100644
+index 00ce099c6..aad8b15b5 100644
 --- a/bootstrap/pom.xml
 +++ b/bootstrap/pom.xml
 @@ -5,18 +5,18 @@
@@ -102,7 +102,7 @@ index 00ce099c..aad8b15b 100644
              <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
 diff --git a/chat/pom.xml b/chat/pom.xml
-index 0ad5dd16..1a518607 100644
+index 0ad5dd16b..1a518607a 100644
 --- a/chat/pom.xml
 +++ b/chat/pom.xml
 @@ -5,18 +5,18 @@
@@ -129,7 +129,7 @@ index 0ad5dd16..1a518607 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index 7d32ea69..eecc7644 100644
+index 7d32ea69d..eecc76447 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -5,18 +5,18 @@
@@ -156,7 +156,7 @@ index 7d32ea69..eecc7644 100644
      <dependencies>
          <dependency>
 diff --git a/event/pom.xml b/event/pom.xml
-index e2432463..caa130ba 100644
+index e2432463a..caa130ba5 100644
 --- a/event/pom.xml
 +++ b/event/pom.xml
 @@ -5,16 +5,16 @@
@@ -181,7 +181,7 @@ index e2432463..caa130ba 100644
 +    <description>Generic java event dispatching API intended for use with Travertine.</description>
  </project>
 diff --git a/log/pom.xml b/log/pom.xml
-index 465ebbf2..e26dd259 100644
+index 465ebbf26..e26dd2597 100644
 --- a/log/pom.xml
 +++ b/log/pom.xml
 @@ -5,18 +5,18 @@
@@ -217,7 +217,7 @@ index 465ebbf2..e26dd259 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/log4j/pom.xml b/log4j/pom.xml
-index 127d0c14..7808dbc6 100644
+index 24a5f780b..0dc460613 100644
 --- a/log4j/pom.xml
 +++ b/log4j/pom.xml
 @@ -4,18 +4,18 @@
@@ -242,7 +242,7 @@ index 127d0c14..7808dbc6 100644
 +    <description>Simplistic and performant Log4j2 based logger and console API designed for use with Travertine and Minecraft related applications.</description>
  
      <properties>
-         <log4j2.version>2.17.1</log4j2.version>
+         <log4j2.version>2.17.2</log4j2.version>
 @@ -50,5 +50,24 @@
              <version>3.4.4</version>
              <scope>runtime</scope>
@@ -269,7 +269,7 @@ index 127d0c14..7808dbc6 100644
      </dependencies>
  </project>
 diff --git a/module/cmd-alert/pom.xml b/module/cmd-alert/pom.xml
-index b41791f1..f5265f7f 100644
+index b41791f14..f5265f7f8 100644
 --- a/module/cmd-alert/pom.xml
 +++ b/module/cmd-alert/pom.xml
 @@ -5,13 +5,13 @@
@@ -289,7 +289,7 @@ index b41791f1..f5265f7f 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-find/pom.xml b/module/cmd-find/pom.xml
-index a17080ab..4b743ab8 100644
+index a17080ab2..4b743ab8c 100644
 --- a/module/cmd-find/pom.xml
 +++ b/module/cmd-find/pom.xml
 @@ -5,13 +5,13 @@
@@ -309,7 +309,7 @@ index a17080ab..4b743ab8 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
-index 16003086..949ca3fb 100644
+index 160030866..949ca3fb6 100644
 --- a/module/cmd-list/pom.xml
 +++ b/module/cmd-list/pom.xml
 @@ -5,13 +5,13 @@
@@ -329,7 +329,7 @@ index 16003086..949ca3fb 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-send/pom.xml b/module/cmd-send/pom.xml
-index ba084281..0b82ebc1 100644
+index ba0842813..0b82ebc14 100644
 --- a/module/cmd-send/pom.xml
 +++ b/module/cmd-send/pom.xml
 @@ -5,13 +5,13 @@
@@ -349,7 +349,7 @@ index ba084281..0b82ebc1 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-server/pom.xml b/module/cmd-server/pom.xml
-index cb4d2932..59c24f47 100644
+index cb4d29327..59c24f477 100644
 --- a/module/cmd-server/pom.xml
 +++ b/module/cmd-server/pom.xml
 @@ -5,13 +5,13 @@
@@ -369,7 +369,7 @@ index cb4d2932..59c24f47 100644
      <packaging>jar</packaging>
  
 diff --git a/module/pom.xml b/module/pom.xml
-index 350a49b8..19c9408c 100644
+index 350a49b83..19c9408cc 100644
 --- a/module/pom.xml
 +++ b/module/pom.xml
 @@ -5,18 +5,18 @@
@@ -405,7 +405,7 @@ index 350a49b8..19c9408c 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/module/reconnect-yaml/pom.xml b/module/reconnect-yaml/pom.xml
-index d3476fc5..c84fba27 100644
+index d3476fc58..c84fba279 100644
 --- a/module/reconnect-yaml/pom.xml
 +++ b/module/reconnect-yaml/pom.xml
 @@ -5,13 +5,13 @@
@@ -426,7 +426,7 @@ index d3476fc5..c84fba27 100644
      <packaging>jar</packaging>
  
 diff --git a/native/pom.xml b/native/pom.xml
-index 1eff2c93..d22eb805 100644
+index 1eff2c938..d22eb8053 100644
 --- a/native/pom.xml
 +++ b/native/pom.xml
 @@ -5,18 +5,18 @@
@@ -453,7 +453,7 @@ index 1eff2c93..d22eb805 100644
      <dependencies>
          <dependency>
 diff --git a/pom.xml b/pom.xml
-index 505d1d14..124577c3 100644
+index 505d1d14a..124577c3e 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -5,19 +5,19 @@
@@ -500,7 +500,7 @@ index 505d1d14..124577c3 100644
  
      <distributionManagement>
 diff --git a/protocol/pom.xml b/protocol/pom.xml
-index a783d9b0..76c21743 100644
+index a783d9b0f..76c217437 100644
 --- a/protocol/pom.xml
 +++ b/protocol/pom.xml
 @@ -5,18 +5,18 @@
@@ -536,7 +536,7 @@ index a783d9b0..76c21743 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index cca0ef95..db3d89c0 100644
+index 23bfa61d2..e538a135e 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -5,17 +5,17 @@
@@ -598,7 +598,7 @@ index cca0ef95..db3d89c0 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
-index 338c30d3..c0499252 100644
+index 338c30d35..c04992523 100644
 --- a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 +++ b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 @@ -20,7 +20,7 @@ public class JenkinsModuleSource implements ModuleSource
@@ -611,7 +611,7 @@ index 338c30d3..c0499252 100644
                  version.getBuild(),
                  module.getName()
 diff --git a/query/pom.xml b/query/pom.xml
-index 081bff62..59cb51c8 100644
+index 081bff62d..59cb51c84 100644
 --- a/query/pom.xml
 +++ b/query/pom.xml
 @@ -5,18 +5,18 @@
