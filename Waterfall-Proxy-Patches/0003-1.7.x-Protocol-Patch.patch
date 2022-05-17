@@ -1,4 +1,4 @@
-From 1bf11336b059d8a5ec52ccd0faaa8be644d00765 Mon Sep 17 00:00:00 2001
+From 83e2cbba94bf1db8f94eba2d52d98f5499b72090 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 10:31:04 -0500
 Subject: [PATCH] 1.7.x Protocol Patch
@@ -445,7 +445,7 @@ index 7f0b71c9..ecc59f44 100644
  
              Supplier<? extends DefinedPacket> constructor = protocolData.packetConstructors[id];
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java b/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
-index e4c970e1..9b5de59d 100644
+index 1069399e..7e5f89e7 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
 @@ -7,6 +7,8 @@ public class ProtocolConstants
@@ -465,8 +465,8 @@ index e4c970e1..9b5de59d 100644
                  "1.8.x",
                  "1.9.x",
                  "1.10.x",
-@@ -55,6 +58,8 @@ public class ProtocolConstants
-                 "1.17.x"
+@@ -56,6 +59,8 @@ public class ProtocolConstants
+                 "1.18.x"
          );
          ImmutableList.Builder<Integer> supportedVersionIds = ImmutableList.<Integer>builder().add(
 +                ProtocolConstants.MINECRAFT_1_7_2,
@@ -1546,7 +1546,7 @@ index d3650ff8..a9dfa544 100644
              con.unsafe().sendPacket( pluginMessage );
              throw CancelSendSignal.INSTANCE;
 diff --git a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
-index c3e60fa5..7531296b 100644
+index 4afab05d..38c3c52f 100644
 --- a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
 +++ b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
 @@ -3,6 +3,8 @@ package net.md_5.bungee.connection;
@@ -1998,5 +1998,5 @@ index daf12f74..e33861ab 100644
  
      @Override
 -- 
-2.33.0
+2.36.1
 
