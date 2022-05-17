@@ -1,11 +1,11 @@
-From 721936a4d8e9e58eac19e5a3a487dcc9787a35c2 Mon Sep 17 00:00:00 2001
+From 11cf90fdeeebbc2b21d12d19cbeff30c03993833 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
 
 
 diff --git a/api/pom.xml b/api/pom.xml
-index 9b29dfca..87243db0 100644
+index 379b6023..a7f49d87 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -5,41 +5,41 @@
@@ -129,7 +129,7 @@ index 0ad5dd16..1a518607 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index 2caffc27..bcac534f 100644
+index 7d32ea69..eecc7644 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -5,18 +5,18 @@
@@ -453,7 +453,7 @@ index 1eff2c93..d22eb805 100644
      <dependencies>
          <dependency>
 diff --git a/pom.xml b/pom.xml
-index 94fad2cc..58aaa80e 100644
+index 505d1d14..124577c3 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -5,19 +5,19 @@
@@ -500,7 +500,7 @@ index 94fad2cc..58aaa80e 100644
  
      <distributionManagement>
 diff --git a/protocol/pom.xml b/protocol/pom.xml
-index c62e0175..6b9a08b0 100644
+index a783d9b0..76c21743 100644
 --- a/protocol/pom.xml
 +++ b/protocol/pom.xml
 @@ -5,18 +5,18 @@
@@ -524,9 +524,9 @@ index c62e0175..6b9a08b0 100644
 +    <name>Travertine-Protocol</name>
 +    <description>Minimal implementation of the Minecraft protocol for use in Travertine</description>
  
-     <dependencies>
-         <dependency>
-@@ -27,7 +27,7 @@
+     <!-- We really shouldn't depend on external repositories, but at least this is the Central staging one -->
+     <repositories>
+@@ -42,7 +42,7 @@
          </dependency>
          <dependency>
              <groupId>io.github.waterfallmc</groupId>
@@ -536,7 +536,7 @@ index c62e0175..6b9a08b0 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 22c4f71b..fdd060cc 100644
+index cca0ef95..db3d89c0 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -5,17 +5,17 @@
