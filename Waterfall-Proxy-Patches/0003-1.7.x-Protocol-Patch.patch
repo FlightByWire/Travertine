@@ -1,4 +1,4 @@
-From 01c3090da7ba93a10cc9aa6e85c61667fe30b754 Mon Sep 17 00:00:00 2001
+From 3d35ff8ec9fe4015c4b6cea68a22104a01bbdb45 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 10:31:04 -0500
 Subject: [PATCH] 1.7.x Protocol Patch
@@ -445,7 +445,7 @@ index 7f0b71c9..ecc59f44 100644
  
              Supplier<? extends DefinedPacket> constructor = protocolData.packetConstructors[id];
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java b/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
-index 0768e3b7..c35ce1e5 100644
+index 6360818c..fac34dcd 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/ProtocolConstants.java
 @@ -7,6 +7,8 @@ public class ProtocolConstants
@@ -457,7 +457,7 @@ index 0768e3b7..c35ce1e5 100644
      public static final int MINECRAFT_1_8 = 47;
      public static final int MINECRAFT_1_9 = 107;
      public static final int MINECRAFT_1_9_1 = 108;
-@@ -43,6 +45,7 @@ public class ProtocolConstants
+@@ -44,6 +46,7 @@ public class ProtocolConstants
      static
      {
          ImmutableList.Builder<String> supportedVersions = ImmutableList.<String>builder().add(
@@ -465,7 +465,7 @@ index 0768e3b7..c35ce1e5 100644
                  "1.8.x",
                  "1.9.x",
                  "1.10.x",
-@@ -56,6 +59,8 @@ public class ProtocolConstants
+@@ -57,6 +60,8 @@ public class ProtocolConstants
                  "1.18.x"
          );
          ImmutableList.Builder<Integer> supportedVersionIds = ImmutableList.<Integer>builder().add(
@@ -1629,7 +1629,7 @@ index 9537208e..31fdeef4 100644
              con.getServer().disconnect( "Quitting" );
          }
 diff --git a/proxy/src/main/java/net/md_5/bungee/entitymap/EntityMap.java b/proxy/src/main/java/net/md_5/bungee/entitymap/EntityMap.java
-index 99ad8b9c..e1c3572d 100644
+index cda6451d..a985adc3 100644
 --- a/proxy/src/main/java/net/md_5/bungee/entitymap/EntityMap.java
 +++ b/proxy/src/main/java/net/md_5/bungee/entitymap/EntityMap.java
 @@ -35,6 +35,10 @@ public abstract class EntityMap
