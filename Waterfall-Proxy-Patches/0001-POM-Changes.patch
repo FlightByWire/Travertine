@@ -1,11 +1,11 @@
-From 1efcbbe99146c678c3bc3b8063c555bb223f6aca Mon Sep 17 00:00:00 2001
+From bb1b8b5439eb39b34835c0c99146ad7a387c1c27 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
 
 
 diff --git a/api/pom.xml b/api/pom.xml
-index 379b60230..a7f49d87d 100644
+index ff4800b0..d07f965c 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -5,41 +5,41 @@
@@ -14,14 +14,14 @@ index 379b60230..a7f49d87d 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-api</artifactId>
 +    <artifactId>travertine-api</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-API</name>
@@ -58,7 +58,7 @@ index 379b60230..a7f49d87d 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
-index 00ce099c6..aad8b15b5 100644
+index 688f1b99..a6c9d973 100644
 --- a/bootstrap/pom.xml
 +++ b/bootstrap/pom.xml
 @@ -5,18 +5,18 @@
@@ -67,14 +67,14 @@ index 00ce099c6..aad8b15b5 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-bootstrap</artifactId>
 +    <artifactId>travertine-bootstrap</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Bootstrap</name>
@@ -102,7 +102,7 @@ index 00ce099c6..aad8b15b5 100644
              <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
 diff --git a/chat/pom.xml b/chat/pom.xml
-index 0ad5dd16b..1a518607a 100644
+index 3ac27114..337066da 100644
 --- a/chat/pom.xml
 +++ b/chat/pom.xml
 @@ -5,18 +5,18 @@
@@ -111,14 +111,14 @@ index 0ad5dd16b..1a518607a 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-chat</artifactId>
 +    <artifactId>travertine-chat</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Chat</name>
@@ -129,7 +129,7 @@ index 0ad5dd16b..1a518607a 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index 7d32ea69d..eecc76447 100644
+index ac721ee3..f7ecd474 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -5,18 +5,18 @@
@@ -138,14 +138,14 @@ index 7d32ea69d..eecc76447 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-config</artifactId>
 +    <artifactId>travertine-config</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Config</name>
@@ -156,7 +156,7 @@ index 7d32ea69d..eecc76447 100644
      <dependencies>
          <dependency>
 diff --git a/event/pom.xml b/event/pom.xml
-index e2432463a..caa130ba5 100644
+index ac85fc82..e1dfd6a8 100644
 --- a/event/pom.xml
 +++ b/event/pom.xml
 @@ -5,16 +5,16 @@
@@ -165,14 +165,14 @@ index e2432463a..caa130ba5 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-event</artifactId>
 +    <artifactId>travertine-event</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Event</name>
@@ -181,7 +181,7 @@ index e2432463a..caa130ba5 100644
 +    <description>Generic java event dispatching API intended for use with Travertine.</description>
  </project>
 diff --git a/log/pom.xml b/log/pom.xml
-index 465ebbf26..e26dd2597 100644
+index d61dba6f..eecbd4b2 100644
 --- a/log/pom.xml
 +++ b/log/pom.xml
 @@ -5,18 +5,18 @@
@@ -190,14 +190,14 @@ index 465ebbf26..e26dd2597 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-log</artifactId>
 +    <artifactId>travertine-log</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Log</name>
@@ -217,7 +217,7 @@ index 465ebbf26..e26dd2597 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/log4j/pom.xml b/log4j/pom.xml
-index 24a5f780b..0dc460613 100644
+index fb091698..68016227 100644
 --- a/log4j/pom.xml
 +++ b/log4j/pom.xml
 @@ -4,18 +4,18 @@
@@ -226,14 +226,14 @@ index 24a5f780b..0dc460613 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-log4j</artifactId>
 +    <artifactId>travertine-log4j</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Log</name>
@@ -269,7 +269,7 @@ index 24a5f780b..0dc460613 100644
      </dependencies>
  </project>
 diff --git a/module/cmd-alert/pom.xml b/module/cmd-alert/pom.xml
-index b41791f14..f5265f7f8 100644
+index 64d197ce..7abbacaf 100644
 --- a/module/cmd-alert/pom.xml
 +++ b/module/cmd-alert/pom.xml
 @@ -5,13 +5,13 @@
@@ -278,18 +278,18 @@ index b41791f14..f5265f7f8 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-module</artifactId>
 +        <artifactId>travertine-module</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-module-cmd-alert</artifactId>
 +    <artifactId>travertine-module-cmd-alert</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-find/pom.xml b/module/cmd-find/pom.xml
-index a17080ab2..4b743ab8c 100644
+index c4ad20de..f4c36a16 100644
 --- a/module/cmd-find/pom.xml
 +++ b/module/cmd-find/pom.xml
 @@ -5,13 +5,13 @@
@@ -298,18 +298,18 @@ index a17080ab2..4b743ab8c 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-module</artifactId>
 +        <artifactId>travertine-module</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-module-cmd-find</artifactId>
 +    <artifactId>travertine-module-cmd-find</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
-index 160030866..949ca3fb6 100644
+index 9e22202d..e9fa7086 100644
 --- a/module/cmd-list/pom.xml
 +++ b/module/cmd-list/pom.xml
 @@ -5,13 +5,13 @@
@@ -318,18 +318,18 @@ index 160030866..949ca3fb6 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-module</artifactId>
 +        <artifactId>travertine-module</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-module-cmd-list</artifactId>
 +    <artifactId>travertine-module-cmd-list</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-send/pom.xml b/module/cmd-send/pom.xml
-index ba0842813..0b82ebc14 100644
+index 5326f925..4fd4ec76 100644
 --- a/module/cmd-send/pom.xml
 +++ b/module/cmd-send/pom.xml
 @@ -5,13 +5,13 @@
@@ -338,18 +338,18 @@ index ba0842813..0b82ebc14 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-module</artifactId>
 +        <artifactId>travertine-module</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-module-cmd-send</artifactId>
 +    <artifactId>travertine-module-cmd-send</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-server/pom.xml b/module/cmd-server/pom.xml
-index cb4d29327..59c24f477 100644
+index 86faab24..b4dbc635 100644
 --- a/module/cmd-server/pom.xml
 +++ b/module/cmd-server/pom.xml
 @@ -5,13 +5,13 @@
@@ -358,18 +358,18 @@ index cb4d29327..59c24f477 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-module</artifactId>
 +        <artifactId>travertine-module</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-module-cmd-server</artifactId>
 +    <artifactId>travertine-module-cmd-server</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/pom.xml b/module/pom.xml
-index 350a49b83..19c9408cc 100644
+index b4283e43..c177bcfe 100644
 --- a/module/pom.xml
 +++ b/module/pom.xml
 @@ -5,18 +5,18 @@
@@ -378,14 +378,14 @@ index 350a49b83..19c9408cc 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-module</artifactId>
 +    <artifactId>travertine-module</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>pom</packaging>
  
 -    <name>Waterfall Modules</name>
@@ -405,7 +405,7 @@ index 350a49b83..19c9408cc 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/module/reconnect-yaml/pom.xml b/module/reconnect-yaml/pom.xml
-index d3476fc58..c84fba279 100644
+index 8aff53bd..5b8b5e80 100644
 --- a/module/reconnect-yaml/pom.xml
 +++ b/module/reconnect-yaml/pom.xml
 @@ -5,13 +5,13 @@
@@ -414,7 +414,7 @@ index d3476fc58..c84fba279 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-module</artifactId>
 +        <artifactId>travertine-module</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -422,11 +422,11 @@ index d3476fc58..c84fba279 100644
 -    <artifactId>bungeecord-module-reconnect-yaml</artifactId>
 +    <groupId>io.github.waterfallmc</groupId>
 +    <artifactId>travertine-module-reconnect-yaml</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/native/pom.xml b/native/pom.xml
-index 1eff2c938..d22eb8053 100644
+index caa4c4cb..ce52f8ae 100644
 --- a/native/pom.xml
 +++ b/native/pom.xml
 @@ -5,18 +5,18 @@
@@ -435,14 +435,14 @@ index 1eff2c938..d22eb8053 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-native</artifactId>
 +    <artifactId>travertine-native</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Native</name>
@@ -453,7 +453,7 @@ index 1eff2c938..d22eb8053 100644
      <dependencies>
          <dependency>
 diff --git a/pom.xml b/pom.xml
-index 505d1d14a..124577c3e 100644
+index 2b544c23..28db386b 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -5,19 +5,19 @@
@@ -469,7 +469,7 @@ index 505d1d14a..124577c3e 100644
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-parent</artifactId>
 +    <artifactId>travertine-parent</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>pom</packaging>
  
 -    <name>Waterfall-Parent</name>
@@ -500,7 +500,7 @@ index 505d1d14a..124577c3e 100644
  
      <distributionManagement>
 diff --git a/protocol/pom.xml b/protocol/pom.xml
-index a783d9b0f..76c217437 100644
+index 93ae5952..21926d2e 100644
 --- a/protocol/pom.xml
 +++ b/protocol/pom.xml
 @@ -5,18 +5,18 @@
@@ -509,14 +509,14 @@ index a783d9b0f..76c217437 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-protocol</artifactId>
 +    <artifactId>travertine-protocol</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Protocol</name>
@@ -536,7 +536,7 @@ index a783d9b0f..76c217437 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 23bfa61d2..e538a135e 100644
+index 205162db..ce6e0cd5 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -5,17 +5,17 @@
@@ -545,14 +545,14 @@ index 23bfa61d2..e538a135e 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-proxy</artifactId>
 +    <artifactId>travertine-proxy</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Proxy</name>
@@ -598,7 +598,7 @@ index 23bfa61d2..e538a135e 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
-index 338c30d35..c04992523 100644
+index 338c30d3..c0499252 100644
 --- a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 +++ b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 @@ -20,7 +20,7 @@ public class JenkinsModuleSource implements ModuleSource
@@ -611,7 +611,7 @@ index 338c30d35..c04992523 100644
                  version.getBuild(),
                  module.getName()
 diff --git a/query/pom.xml b/query/pom.xml
-index 081bff62d..59cb51c84 100644
+index 72eb14e2..dd3fe3a6 100644
 --- a/query/pom.xml
 +++ b/query/pom.xml
 @@ -5,18 +5,18 @@
@@ -620,14 +620,14 @@ index 081bff62d..59cb51c84 100644
          <groupId>io.github.waterfallmc</groupId>
 -        <artifactId>waterfall-parent</artifactId>
 +        <artifactId>travertine-parent</artifactId>
-         <version>1.18-R0.1-SNAPSHOT</version>
+         <version>1.19-R0.1-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
      <groupId>io.github.waterfallmc</groupId>
 -    <artifactId>waterfall-query</artifactId>
 +    <artifactId>travertine-query</artifactId>
-     <version>1.18-R0.1-SNAPSHOT</version>
+     <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Query</name>
