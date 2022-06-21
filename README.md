@@ -1,5 +1,9 @@
-Travertine
+Travertine (LTS)
 =========
+Travertine, but with extended/ long term updates.   
+### Download from https://flightbywire.space.
+
+**This version of Travertine is maintained by the FlightByWire group. The only difference from the original Travertine is that we added our ci to provide the download for the optional modules. Everything else is stock. Feel free to fork this repository or build off of it. We will continue to maintain this repository for the next few years.**
 
 Travertine is Waterfall with additional protocols. Waterfall is a fork of the well-known [BungeeCord](https://github.com/SpigotMC/BungeeCord) server teleportation suite.
 
