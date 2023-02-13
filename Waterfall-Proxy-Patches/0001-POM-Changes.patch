@@ -1,11 +1,11 @@
-From bb1b8b5439eb39b34835c0c99146ad7a387c1c27 Mon Sep 17 00:00:00 2001
+From a4d96f9f92c6b45d747337efe8d57fa95d6a70bd Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
 
 
 diff --git a/api/pom.xml b/api/pom.xml
-index ff4800b0..d07f965c 100644
+index 405b1c2c..a2cce00b 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -5,41 +5,41 @@
@@ -102,7 +102,7 @@ index 688f1b99..a6c9d973 100644
              <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
 diff --git a/chat/pom.xml b/chat/pom.xml
-index 3ac27114..337066da 100644
+index 1a8b097d..1de43319 100644
 --- a/chat/pom.xml
 +++ b/chat/pom.xml
 @@ -5,18 +5,18 @@
@@ -129,7 +129,7 @@ index 3ac27114..337066da 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index ac721ee3..f7ecd474 100644
+index 0b48084a..343ac381 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -5,18 +5,18 @@
@@ -308,6 +308,26 @@ index c4ad20de..f4c36a16 100644
      <version>1.19-R0.1-SNAPSHOT</version>
      <packaging>jar</packaging>
  
+diff --git a/module/cmd-kick/pom.xml b/module/cmd-kick/pom.xml
+index 17d3dc71..3e5e4fe9 100644
+--- a/module/cmd-kick/pom.xml
++++ b/module/cmd-kick/pom.xml
+@@ -5,13 +5,13 @@
+ 
+     <parent>
+         <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <artifactId>travertine-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+     <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-kick</artifactId>
++    <artifactId>travertine-module-cmd-kick</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
 diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
 index 9e22202d..e9fa7086 100644
 --- a/module/cmd-list/pom.xml
@@ -369,7 +389,7 @@ index 86faab24..b4dbc635 100644
      <packaging>jar</packaging>
  
 diff --git a/module/pom.xml b/module/pom.xml
-index b4283e43..c177bcfe 100644
+index 0de7979e..298009a5 100644
 --- a/module/pom.xml
 +++ b/module/pom.xml
 @@ -5,18 +5,18 @@
@@ -395,7 +415,7 @@ index b4283e43..c177bcfe 100644
  
      <modules>
          <module>cmd-alert</module>
-@@ -36,7 +36,7 @@
+@@ -37,7 +37,7 @@
      <dependencies>
          <dependency>
              <groupId>io.github.waterfallmc</groupId>
@@ -536,7 +556,7 @@ index 93ae5952..21926d2e 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 205162db..ce6e0cd5 100644
+index d81bf730..9ded89f8 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -5,17 +5,17 @@
@@ -647,5 +667,5 @@ index 72eb14e2..dd3fe3a6 100644
              <scope>compile</scope>
          </dependency>
 -- 
-2.36.1
+2.39.1
 

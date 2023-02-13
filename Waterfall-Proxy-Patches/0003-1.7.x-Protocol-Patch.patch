@@ -1,4 +1,4 @@
-From a6ca028167110872e4183bfcd877b56b0a27418e Mon Sep 17 00:00:00 2001
+From 5894f42573732a814e697b1dcab2d9bbe7b64ad1 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 10:31:04 -0500
 Subject: [PATCH] 1.7.x Protocol Patch
@@ -154,7 +154,7 @@ index d4b03843..9aac7ca9 100644
      }
  }
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/Protocol.java b/protocol/src/main/java/net/md_5/bungee/protocol/Protocol.java
-index 084f7add..f1197ee7 100644
+index f5a675a9..585d4d29 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/Protocol.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/Protocol.java
 @@ -64,7 +64,7 @@ public enum Protocol
@@ -1547,7 +1547,7 @@ index 97c4b210..cc98d2f3 100644
              con.unsafe().sendPacket( pluginMessage );
              throw CancelSendSignal.INSTANCE;
 diff --git a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
-index ed1fe41a..bff09921 100644
+index 24893418..ca0b023f 100644
 --- a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
 +++ b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
 @@ -3,6 +3,8 @@ package net.md_5.bungee.connection;
@@ -1559,7 +1559,7 @@ index ed1fe41a..bff09921 100644
  import java.math.BigInteger;
  import java.net.InetSocketAddress;
  import java.net.SocketAddress;
-@@ -259,12 +261,28 @@ public class InitialHandler extends PacketHandler implements PendingConnection
+@@ -279,12 +281,28 @@ public class InitialHandler extends PacketHandler implements PendingConnection
                      @Override
                      public void done(ProxyPingEvent pingResult, Throwable error)
                      {
@@ -2000,5 +2000,5 @@ index daf12f74..e33861ab 100644
  
      @Override
 -- 
-2.36.1
+2.39.1
 
