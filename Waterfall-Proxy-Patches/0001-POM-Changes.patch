@@ -1,4 +1,4 @@
-From a4d96f9f92c6b45d747337efe8d57fa95d6a70bd Mon Sep 17 00:00:00 2001
+From 35fa9c709114cfdf50575926e2b5c32252d4f93d Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
@@ -556,7 +556,7 @@ index 93ae5952..21926d2e 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index d81bf730..9ded89f8 100644
+index 1036a2e7..049b1006 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -5,17 +5,17 @@
@@ -580,7 +580,7 @@ index d81bf730..9ded89f8 100644
      <description>Proxy component of the Elastic Portal Suite</description>
  
      <properties>
-@@ -65,31 +65,31 @@
+@@ -72,31 +72,31 @@
          </dependency>
          <dependency>
              <groupId>io.github.waterfallmc</groupId>
