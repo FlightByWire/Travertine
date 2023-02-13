@@ -1,4 +1,4 @@
-From 97eca8cd099e3cbe3f7d9d10f7e85ea00f48f880 Mon Sep 17 00:00:00 2001
+From c704cd84ed313b4f1bc3d1fada701a5888abe95a Mon Sep 17 00:00:00 2001
 From: "Five (Xer)" <admin@fivepb.me>
 Date: Wed, 29 Sep 2021 14:02:35 +0200
 Subject: [PATCH] Update with FlightByWire API
@@ -8,18 +8,18 @@ modules can still download correctly
 cc Joshua with MineCult
 
 diff --git a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
-index c0499252..59a964a3 100644
+index 5147d33b..59a964a3 100644
 --- a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 +++ b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 @@ -19,7 +19,7 @@ public class JenkinsModuleSource implements ModuleSource
          try
          {
              final String url = String.format(
--                "https://papermc.io/api/v2/projects/%1$s/versions/%2$s/builds/%3$s/downloads/%4$s-%2$s-%3$s.jar",
+-                "https://api.papermc.io/v2/projects/%1$s/versions/%2$s/builds/%3$s/downloads/%4$s-%2$s-%3$s.jar",
 +                "https://flightbywire.space/api/v2/projects/%1$s/versions/%2$s/builds/%3$s/downloads/%4$s-%2$s-%3$s.jar",
                  "travertine", // Travertine
                  net.md_5.bungee.api.ProxyServer.getInstance().getVersion().split(":")[2].split("-")[0],
                  version.getBuild(),
 -- 
-2.33.0
+2.39.1
 

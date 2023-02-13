@@ -1,4 +1,4 @@
-From 35fa9c709114cfdf50575926e2b5c32252d4f93d Mon Sep 17 00:00:00 2001
+From af943ca36d9da67eac527765bf14fa0c0c897a86 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
@@ -473,7 +473,7 @@ index caa4c4cb..ce52f8ae 100644
      <dependencies>
          <dependency>
 diff --git a/pom.xml b/pom.xml
-index 2b544c23..28db386b 100644
+index 6810b9cc..840c769c 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -5,19 +5,19 @@
@@ -618,13 +618,13 @@ index 1036a2e7..049b1006 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
-index 338c30d3..c0499252 100644
+index 5bb86152..5147d33b 100644
 --- a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 +++ b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 @@ -20,7 +20,7 @@ public class JenkinsModuleSource implements ModuleSource
          {
              final String url = String.format(
-                 "https://papermc.io/api/v2/projects/%1$s/versions/%2$s/builds/%3$s/downloads/%4$s-%2$s-%3$s.jar",
+                 "https://api.papermc.io/v2/projects/%1$s/versions/%2$s/builds/%3$s/downloads/%4$s-%2$s-%3$s.jar",
 -                "waterfall",
 +                "travertine", // Travertine
                  net.md_5.bungee.api.ProxyServer.getInstance().getVersion().split(":")[2].split("-")[0],
