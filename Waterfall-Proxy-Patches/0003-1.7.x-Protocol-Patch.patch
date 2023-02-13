@@ -1,4 +1,4 @@
-From 46ff098e0a003c94649adb84b3ecd259dd628169 Mon Sep 17 00:00:00 2001
+From c3e0455b2bfe2aa65561ba1cb0f9594a22eb4cf7 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 10:31:04 -0500
 Subject: [PATCH] 1.7.x Protocol Patch
@@ -101,10 +101,10 @@ index 00000000..90064112
 +    }
 +}
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java b/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java
-index bafef27c..00b85274 100644
+index 561a9522..c105fb1d 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/DefinedPacket.java
-@@ -333,6 +333,11 @@ public abstract class DefinedPacket
+@@ -328,6 +328,11 @@ public abstract class DefinedPacket
          read( buf );
      }
  
@@ -116,7 +116,7 @@ index bafef27c..00b85274 100644
      public void write(ByteBuf buf)
      {
          throw new UnsupportedOperationException( "Packet must implement write method" );
-@@ -343,6 +348,11 @@ public abstract class DefinedPacket
+@@ -338,6 +343,11 @@ public abstract class DefinedPacket
          write( buf );
      }
  
@@ -509,7 +509,7 @@ index c0d37142..a07e25b1 100644
  
                  if ( in.readableBytes() < length )
 diff --git a/protocol/src/main/java/net/md_5/bungee/protocol/packet/Chat.java b/protocol/src/main/java/net/md_5/bungee/protocol/packet/Chat.java
-index 6034fc18..ef0a2034 100644
+index dc986609..aa4aaa5d 100644
 --- a/protocol/src/main/java/net/md_5/bungee/protocol/packet/Chat.java
 +++ b/protocol/src/main/java/net/md_5/bungee/protocol/packet/Chat.java
 @@ -1,5 +1,6 @@
